@@ -1,0 +1,122 @@
+[
+    {
+        "deviceId":1,
+        "name":"device001",
+        "value": 5,
+        "status": "active"
+    },
+    {
+        "deviceId":2,
+        "name":"device002",
+        "value": 40,
+        "status": "active"
+    },
+    {
+        "deviceId":3,
+        "name":"device003",
+        "value":23,
+        "status": "active"
+    },
+    {
+        "deviceId":4,
+        "name":"device004",
+        "value":72,
+        "status": "active"
+    },
+    {
+        "deviceId":5,
+        "name":"device005",
+        "value":17,
+        "status": "active"
+    },
+    {
+        "deviceId":6,
+        "name":"device006",
+        "value":8,
+        "status": "active"
+    },
+    {
+        "deviceId":7,
+        "name":"device007",
+        "value":34,
+        "status": "active"
+    },
+    {
+        "deviceId":8,
+        "name":"device008",
+        "value":22,
+        "status": "active"
+    },
+    {
+        "deviceId":9,
+        "name":"device009",
+        "value": 18,
+        "status": "active"
+    },
+    {
+        "deviceId":10,
+        "name":"device010",
+        "value": 25,
+        "status": "active"
+    },
+    {
+        "deviceId":11,
+        "name":"device011",
+        "value":65,
+        "status": "active"
+    },
+    {
+        "deviceId":12,
+        "name":"device012",
+        "value":78,
+        "status": "active"
+    },
+    {
+        "deviceId":13,
+        "name":"device013",
+        "value":28,
+        "status": "active"
+    },
+    {
+        "deviceId":14,
+        "name":"device014",
+        "value":23,
+        "status": "active"
+    },
+    {
+        "deviceId":15,
+        "name":"device015",
+        "value":3,
+        "status": "active"
+    },
+    {
+        "deviceId":16,
+        "name":"device016",
+        "value":54,
+        "status": "active"
+    },
+    {
+        "deviceId":17,
+        "name":"device017",
+        "value":31,
+        "status": "active"
+    },
+    {
+        "deviceId":18,
+        "name":"device018",
+        "value":43,
+        "status": "active"
+    },
+    {
+        "deviceId":19,
+        "name":"device019",
+        "value":7,
+        "status": "active"
+    },
+    {
+        "deviceId":20,
+        "name":"device020",
+        "value":52,
+        "status": "active"
+    }
+]

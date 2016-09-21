@@ -1,0 +1,142 @@
+[
+    {
+        "deviceId": 1,
+        "location": "Milan",
+        "building": "A01",
+        "minThreshold": 20.0,
+        "maxThreshold": 50.0
+    },
+    {
+        "deviceId": 2,
+        "location": "Milan",
+        "building": "A01",
+        "minThreshold": 20.0,
+        "maxThreshold": 50.0
+    },
+    {
+        "deviceId": 3,
+        "location": "Milan",
+        "building": "A01",
+        "minThreshold": 20.0,
+        "maxThreshold": 50.0
+    },
+    {
+        "deviceId": 4,
+        "location": "Milan",
+        "building": "A01",
+        "minThreshold": 20.0,
+        "maxThreshold": 50.0
+    },
+    {
+        "deviceId": 5,
+        "location": "Milan",
+        "building": "A02",
+        "minThreshold": 20.0,
+        "maxThreshold": 40.0
+    },
+    {
+        "deviceId": 6,
+        "location": "Milan",
+        "building": "A02",
+        "minThreshold": 20.0,
+        "maxThreshold": 40.0
+    },
+    {
+        "deviceId": 7,
+        "location": "Milan",
+        "building": "A02",
+        "minThreshold": 20.0,
+        "maxThreshold": 40.0
+    },
+    {
+        "deviceId": 8,
+        "location": "Milan",
+        "building": "A02",
+        "minThreshold": 20.0,
+        "maxThreshold": 40.0
+    },
+    {
+        "deviceId": 9,
+        "location": "Rome",
+        "building": "B01",
+        "minThreshold": 15.0,
+        "maxThreshold": 35.0
+    },
+    {
+        "deviceId": 10,
+        "location": "Rome",
+        "building": "B01",
+        "minThreshold": 15.0,
+        "maxThreshold": 35.0
+    },
+    {
+        "deviceId": 11,
+        "location": "Rome",
+        "building": "B01",
+        "minThreshold": 15.0,
+        "maxThreshold": 35.0
+    },
+    {
+        "deviceId": 12,
+        "location": "Rome",
+        "building": "B02",
+        "minThreshold": 18.0,
+        "maxThreshold": 45.0
+    },
+    {
+        "deviceId": 13,
+        "location": "Rome",
+        "building": "B02",
+        "minThreshold": 18.0,
+        "maxThreshold": 45.0
+    },
+    {
+        "deviceId": 14,
+        "location": "Rome",
+        "building": "B02",
+        "minThreshold": 18.0,
+        "maxThreshold": 45.0
+    },
+    {
+        "deviceId": 15,
+        "location": "Florence",
+        "building": "C01",
+        "minThreshold": 22.0,
+        "maxThreshold": 55.0
+    },
+    {
+        "deviceId": 16,
+        "location": "Florence",
+        "building": "C01",
+        "minThreshold": 22.0,
+        "maxThreshold": 55.0
+    },
+    {
+        "deviceId": 17,
+        "location": "Florence",
+        "building": "C01",
+        "minThreshold": 22.0,
+        "maxThreshold": 55.0
+    },
+    {
+        "deviceId": 18,
+        "location": "Florence",
+        "building": "C02",
+        "minThreshold": 25.0,
+        "maxThreshold": 60.0
+    },
+    {
+        "deviceId": 19,
+        "location": "Florence",
+        "building": "C02",
+        "minThreshold": 25.0,
+        "maxThreshold": 60.0
+    },
+    {
+        "deviceId": 20,
+        "location": "Florence",
+        "building": "C02",
+        "minThreshold": 25.0,
+        "maxThreshold": 60.0
+    }
+]

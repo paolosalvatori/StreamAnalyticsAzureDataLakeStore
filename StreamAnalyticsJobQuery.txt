@@ -1,0 +1,71 @@
+WITH 
+BetterInput AS
+(
+SELECT 
+value = CAST(value as float), 
+deviceId = CAST(deviceId as nvarchar(max))
+           FROM EventHub 
+)
+SELECT DateAdd(second,-5,System.TimeStamp) as WinStartTime, System.TimeStamp as WinEndTime, R.Location, R.Building, Avg(E.Value) as AverageValue, Count(*) as EventCount 
+FROM BetterInput E
+JOIN ReferenceData R 
+ON E.DeviceId = R.DeviceId
+GROUP BY TumblingWindow(second, 3), R.Location, R.Building
+
+
+SELECT CAST(value as float) AS Value,
+       CAST(deviceId as nvarchar(max)) As DeviceId,
+       DateAdd(second,-5, System.TimeStamp) as WinStartTime, 
+       System.TimeStamp as WinEndTime
+FROM EventHub Partition By PartitionId
+
+
+WITH 
+BetterInput AS
+(
+SELECT 
+value = CAST(value as float), 
+deviceId = CAST(deviceId as nvarchar(max))
+           FROM EventHub 
+)
+SELECT DateAdd(second,-5,System.TimeStamp) as WinStartTime, System.TimeStamp as WinEndTime, R.Location, R.Building
+FROM BetterInput E
+JOIN ReferenceData R 
+ON E.DeviceId = R.DeviceId
+
+
+SELECT PartitionId,
+       EventEnqueuedUtcTime,
+       EventProcessedUtcTime
+FROM EventHub
+
+
+-------------------------------------------------------------------------
+WITH 
+BetterInput AS
+(
+SELECT 
+value = CAST(value as float), 
+deviceId = CAST(deviceId as nvarchar(max))
+FROM EventHub 
+)
+
+SELECT DateAdd(second,-5,System.TimeStamp) as StartTime, System.TimeStamp as EndTime, R.Location, R.Building, Avg(E.Value) as AverageValue, Count(*) as EventCount
+INTO output 
+FROM BetterInput E
+JOIN ReferenceData R 
+ON E.DeviceId = R.DeviceId
+GROUP BY TumblingWindow(second, 3), R.Location, R.Building
+
+SELECT DateAdd(second,-5,System.TimeStamp) as StartTime, System.TimeStamp as EndTime, R.Location, R.Building, Avg(E.Value) as AverageValue, Count(*) as EventCount 
+INTO OutputEventHub
+FROM BetterInput E
+JOIN ReferenceData R 
+ON E.DeviceId = R.DeviceId
+GROUP BY TumblingWindow(second, 3), R.Location, R.Building
+
+SELECT E.DeviceId, E.Value, R.Location, R.Building, System.TimeStamp as EntryTime
+INTO EventArchive
+FROM BetterInput E
+JOIN ReferenceData R 
+ON E.DeviceId = R.DeviceId
